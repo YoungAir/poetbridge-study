@@ -1,0 +1,20 @@
+window.POETBRIDGE_STUDY_CONFIG = {
+  studyId: "poetbridge-pilot-01",
+  mode: "preview",
+  researcherContact: "",
+  ethicsStatement: "",
+  expectedParticipants: 10,
+  poemCount: 4,
+  assignmentPatterns: [
+    ["baseline", "baseline", "bridge", "bridge"],
+    ["baseline", "bridge", "baseline", "bridge"],
+    ["baseline", "bridge", "bridge", "baseline"],
+    ["bridge", "baseline", "baseline", "bridge"],
+    ["bridge", "baseline", "bridge", "baseline"],
+    ["bridge", "bridge", "baseline", "baseline"],
+    ["baseline", "baseline", "bridge", "bridge"],
+    ["bridge", "bridge", "baseline", "baseline"],
+    ["baseline", "bridge", "baseline", "bridge"],
+    ["bridge", "baseline", "bridge", "baseline"],
+  ],
+};
