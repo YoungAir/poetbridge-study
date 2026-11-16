@@ -18,14 +18,14 @@
 从项目根目录运行：
 
 ```powershell
-py -m http.server 4173 --directory study_web
+py -m http.server 4173
 ```
 
 打开 `http://localhost:4173`。研究者管理页位于 `http://localhost:4173/researcher.html`，会显示每个编号对应的诗作条件矩阵和实际人数核对。参与者数据只存在于该浏览器来源的 localStorage；若同一设备顺序使用，记录会自动累积。若每人使用自己的设备，完成后下载 JSON，由研究者逐份导入管理页。
 
 ## GitHub Pages
 
-可以部署到 GitHub Pages，例如 `https://<account>.github.io/<repository>/`。将本目录本身作为独立仓库根目录，推送到 `main` 分支，并在仓库 `Settings → Pages` 将构建来源设为 `GitHub Actions`。`.github/workflows/pages.yml` 会自动发布当前目录，因此无需复制到另一个目录。每位参与者自己的浏览器数据不会自动汇入仓库；GitHub Pages 只托管静态文件，没有写入数据库的能力。本版本采用参与者下载匿名 JSON、研究者导入汇总的方式。不要把包含参与者回答的 JSON/CSV 提交到公开 GitHub 仓库。
+本站已部署到 `https://youngair.github.io/poetbridge-study/`。向 `main` 分支提交后，`.github/workflows/pages.yml` 会自动发布当前目录。每位参与者自己的浏览器数据不会自动汇入仓库；GitHub Pages 只托管静态文件，没有写入数据库的能力。本版本采用参与者下载匿名 JSON、研究者导入汇总的方式。不要把包含参与者回答的 JSON/CSV 提交到公开 GitHub 仓库。
 
 ## 正式招募前
 
